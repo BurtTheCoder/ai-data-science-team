@@ -47,7 +47,7 @@ cd ai-data-science-team
 git checkout refactor/agent-sdk-migration
 
 # Install dependencies
-pip install -r requirements-agent-sdk.txt
+pip install -r requirements.txt
 
 # Set your API key
 export ANTHROPIC_API_KEY="your-api-key-here"
@@ -58,7 +58,7 @@ export ANTHROPIC_API_KEY="your-api-key-here"
 ```python
 import asyncio
 import pandas as pd
-from ai_data_science_team_sdk.agents import DataWranglingAgent
+from ai_data_science_team.agents import DataWranglingAgent
 
 async def main():
     # Load your data
@@ -118,7 +118,7 @@ That's it! No state graphs, no custom tools, no boilerplate.
 ### Data Wrangling
 
 ```python
-from ai_data_science_team_sdk.agents import DataWranglingAgent
+from ai_data_science_team.agents import DataWranglingAgent
 
 agent = DataWranglingAgent()
 
@@ -136,7 +136,7 @@ result = await agent.wrangle_data(
 ### Data Visualization
 
 ```python
-from ai_data_science_team_sdk.agents import DataVisualizationAgent
+from ai_data_science_team.agents import DataVisualizationAgent
 
 agent = DataVisualizationAgent()
 
@@ -153,7 +153,7 @@ fig.show()
 ### Comprehensive Analysis
 
 ```python
-from ai_data_science_team_sdk.multiagents import PandasDataAnalyst
+from ai_data_science_team.multiagents import PandasDataAnalyst
 
 analyst = PandasDataAnalyst()
 
@@ -179,7 +179,7 @@ print(report)
 Launch the interactive web interface:
 
 ```bash
-streamlit run apps_sdk/data_analyst_app.py
+streamlit run apps/data_analyst_app.py
 ```
 
 Features:
@@ -330,7 +330,7 @@ All agents have access to these built-in tools:
 
 - [Migration Strategy](./migration-strategy-ai-data-science-team.md) - Complete migration plan
 - [Detailed Comparison](./detailed-comparison.md) - Feature-by-feature analysis
-- [Basic Usage Examples](./examples_sdk/basic_usage.py) - Code examples
+- [Basic Usage Examples](./examples/basic_usage.py) - Code examples
 - [API Reference](./docs/api_reference.md) - Full API documentation
 
 ---
@@ -341,7 +341,7 @@ All agents have access to these built-in tools:
 
 ```
 ai-data-science-team/
-├── ai_data_science_team_sdk/      # New SDK implementation
+├── ai_data_science_team/      # New SDK implementation
 │   ├── base_agent.py              # Base class for all agents
 │   ├── agents/                    # Standard agents
 │   │   ├── data_wrangling_agent.py
@@ -355,11 +355,11 @@ ai-data-science-team/
 │   │   └── eda_tools_agent.py
 │   └── multiagents/               # Multi-agent systems
 │       └── pandas_data_analyst.py
-├── examples_sdk/                  # Usage examples
+├── examples/                  # Usage examples
 │   └── basic_usage.py
-├── apps_sdk/                      # Streamlit applications
+├── apps/                      # Streamlit applications
 │   └── data_analyst_app.py
-├── requirements-agent-sdk.txt     # Dependencies
+├── requirements.txt     # Dependencies
 └── README_SDK.md                  # This file
 ```
 
@@ -367,7 +367,7 @@ ai-data-science-team/
 
 ```bash
 # Run all examples
-python examples_sdk/basic_usage.py
+python examples/basic_usage.py
 
 # Run specific example
 python -c "

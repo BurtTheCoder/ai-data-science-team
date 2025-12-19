@@ -8,7 +8,7 @@ from typing import Optional, Dict, Any
 import pandas as pd
 from pathlib import Path
 
-from ai_data_science_team_sdk.base_agent import BaseAgentSDK
+from ai_data_science_team.base_agent import BaseAgentSDK
 
 
 class SQLDatabaseAgent(BaseAgentSDK):
@@ -24,7 +24,7 @@ class SQLDatabaseAgent(BaseAgentSDK):
     
     Example:
         ```python
-        from ai_data_science_team_sdk.agents import SQLDatabaseAgent
+        from ai_data_science_team.agents import SQLDatabaseAgent
         
         agent = SQLDatabaseAgent()
         

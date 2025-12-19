@@ -7,7 +7,7 @@ Handles data preparation including missing values, outliers, and data type conve
 from typing import Optional, Union
 import pandas as pd
 
-from ai_data_science_team_sdk.base_agent import BaseAgentSDK
+from ai_data_science_team.base_agent import BaseAgentSDK
 
 
 class DataCleaningAgent(BaseAgentSDK):
@@ -25,7 +25,7 @@ class DataCleaningAgent(BaseAgentSDK):
     Example:
         ```python
         import pandas as pd
-        from ai_data_science_team_sdk.agents import DataCleaningAgent
+        from ai_data_science_team.agents import DataCleaningAgent
         
         df = pd.read_csv("messy_data.csv")
         

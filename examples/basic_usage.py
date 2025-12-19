@@ -9,16 +9,16 @@ import pandas as pd
 from pathlib import Path
 
 # Import SDK agents
-from ai_data_science_team_sdk.agents import (
+from ai_data_science_team.agents import (
     DataWranglingAgent,
     DataVisualizationAgent,
     DataCleaningAgent,
     FeatureEngineeringAgent,
     SQLDatabaseAgent
 )
-from ai_data_science_team_sdk.ml_agents import H2OMLAgent
-from ai_data_science_team_sdk.ds_agents import EDAToolsAgent
-from ai_data_science_team_sdk.multiagents import PandasDataAnalyst
+from ai_data_science_team.ml_agents import H2OMLAgent
+from ai_data_science_team.ds_agents import EDAToolsAgent
+from ai_data_science_team.multiagents import PandasDataAnalyst
 
 
 async def example_data_wrangling():

@@ -9,7 +9,7 @@ from typing import Optional, Union, Dict, Any
 import pandas as pd
 from pathlib import Path
 
-from ai_data_science_team_sdk.base_agent import BaseAgentSDK
+from ai_data_science_team.base_agent import BaseAgentSDK
 
 
 class PandasDataAnalyst(BaseAgentSDK):
@@ -30,7 +30,7 @@ class PandasDataAnalyst(BaseAgentSDK):
     Example:
         ```python
         import pandas as pd
-        from ai_data_science_team_sdk.multiagents import PandasDataAnalyst
+        from ai_data_science_team.multiagents import PandasDataAnalyst
         
         df = pd.read_csv("data.csv")
         

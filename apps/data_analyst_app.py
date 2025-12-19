@@ -13,7 +13,7 @@ import sys
 # Add parent directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent))
 
-from ai_data_science_team_sdk.multiagents import PandasDataAnalyst
+from ai_data_science_team.multiagents import PandasDataAnalyst
 
 
 st.set_page_config(

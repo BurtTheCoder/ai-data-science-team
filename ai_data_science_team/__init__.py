@@ -11,7 +11,7 @@ Key improvements:
 - Simpler agent development and maintenance
 """
 
-from ai_data_science_team_sdk.base_agent import BaseAgentSDK
+from ai_data_science_team.base_agent import BaseAgentSDK
 
 __version__ = "2.0.0"  # Major version bump for SDK migration
 

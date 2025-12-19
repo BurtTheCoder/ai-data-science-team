@@ -7,7 +7,7 @@ Trains machine learning models using H2O AutoML.
 from typing import Optional, Union, Dict, Any
 import pandas as pd
 
-from ai_data_science_team_sdk.base_agent import BaseAgentSDK
+from ai_data_science_team.base_agent import BaseAgentSDK
 
 
 class H2OMLAgent(BaseAgentSDK):
@@ -25,7 +25,7 @@ class H2OMLAgent(BaseAgentSDK):
     Example:
         ```python
         import pandas as pd
-        from ai_data_science_team_sdk.ml_agents import H2OMLAgent
+        from ai_data_science_team.ml_agents import H2OMLAgent
         
         df = pd.read_csv("training_data.csv")
         

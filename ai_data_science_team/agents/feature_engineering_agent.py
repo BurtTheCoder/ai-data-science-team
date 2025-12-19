@@ -7,7 +7,7 @@ Creates ML-ready features from prepared data.
 from typing import Optional, Union, List
 import pandas as pd
 
-from ai_data_science_team_sdk.base_agent import BaseAgentSDK
+from ai_data_science_team.base_agent import BaseAgentSDK
 
 
 class FeatureEngineeringAgent(BaseAgentSDK):
@@ -26,7 +26,7 @@ class FeatureEngineeringAgent(BaseAgentSDK):
     Example:
         ```python
         import pandas as pd
-        from ai_data_science_team_sdk.agents import FeatureEngineeringAgent
+        from ai_data_science_team.agents import FeatureEngineeringAgent
         
         df = pd.read_csv("clean_data.csv")
         

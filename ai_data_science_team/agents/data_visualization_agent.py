@@ -9,7 +9,7 @@ import pandas as pd
 import json
 from pathlib import Path
 
-from ai_data_science_team_sdk.base_agent import BaseAgentSDK
+from ai_data_science_team.base_agent import BaseAgentSDK
 
 
 class DataVisualizationAgent(BaseAgentSDK):
@@ -28,7 +28,7 @@ class DataVisualizationAgent(BaseAgentSDK):
     Example:
         ```python
         import pandas as pd
-        from ai_data_science_team_sdk.agents import DataVisualizationAgent
+        from ai_data_science_team.agents import DataVisualizationAgent
         
         df = pd.read_csv("sales.csv")
         

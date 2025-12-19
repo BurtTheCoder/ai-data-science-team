@@ -9,7 +9,7 @@ from typing import Optional, Union
 import pandas as pd
 from pathlib import Path
 
-from ai_data_science_team_sdk.base_agent import BaseAgentSDK
+from ai_data_science_team.base_agent import BaseAgentSDK
 
 
 class DataWranglingAgent(BaseAgentSDK):
@@ -27,7 +27,7 @@ class DataWranglingAgent(BaseAgentSDK):
     Example:
         ```python
         import pandas as pd
-        from ai_data_science_team_sdk.agents import DataWranglingAgent
+        from ai_data_science_team.agents import DataWranglingAgent
         
         df = pd.read_csv("data.csv")
         

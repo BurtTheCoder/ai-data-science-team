@@ -7,7 +7,7 @@ Performs comprehensive exploratory data analysis with automated reports.
 from typing import Optional, Union, Dict, Any
 import pandas as pd
 
-from ai_data_science_team_sdk.base_agent import BaseAgentSDK
+from ai_data_science_team.base_agent import BaseAgentSDK
 
 
 class EDAToolsAgent(BaseAgentSDK):
@@ -25,7 +25,7 @@ class EDAToolsAgent(BaseAgentSDK):
     Example:
         ```python
         import pandas as pd
-        from ai_data_science_team_sdk.ds_agents import EDAToolsAgent
+        from ai_data_science_team.ds_agents import EDAToolsAgent
         
         df = pd.read_csv("data.csv")
         
