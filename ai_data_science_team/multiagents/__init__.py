@@ -1,2 +1,11 @@
-from ai_data_science_team.multiagents.sql_data_analyst import SQLDataAnalyst, make_sql_data_analyst
-from ai_data_science_team.multiagents.pandas_data_analyst import PandasDataAnalyst, make_pandas_data_analyst
+"""
+Multi-agent systems module.
+
+These agents orchestrate multiple tasks and capabilities for complex workflows.
+"""
+
+from ai_data_science_team_sdk.multiagents.pandas_data_analyst import PandasDataAnalyst
+
+__all__ = [
+    "PandasDataAnalyst",
+]
